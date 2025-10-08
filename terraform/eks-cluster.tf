@@ -3,7 +3,7 @@ module "eks" {
   version = "~> 21.0"
 
   name = "vprofile-eks"
-  kubernetes_version = "1.33"
+  kubernetes_version = "1.29"
 
   vpc_id                         = module.vpc.vpc_id
   subnet_ids                     = module.vpc.private_subnets
